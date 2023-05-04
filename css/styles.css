@@ -239,6 +239,7 @@ ul {
 .site-nav {
   display: none;
 }
+
 @media only screen and (min-width: 768px) {
   .site-nav {
     display: flex;
@@ -308,7 +309,6 @@ ul {
 @media only screen and (min-width: 768px) {
   .address {
     display: block;
-    /* margin-left: auto; */
 
     font-style: normal;
   }
@@ -333,7 +333,6 @@ ul {
 
 @media only screen and (min-width: 1158px) {
   .address-nav {
-    display: flex;
     flex-direction: row;
     justify-content: start;
     gap: 40px;
