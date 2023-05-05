@@ -980,14 +980,22 @@ ul {
 
   background-color: var(--footer-background);
 }
+
 .footer-contant {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
 }
 
+@media only screen and (min-width: 1158px) {
+  .footer-contant {
+    align-items: baseline;
+  }
+}
 .footer-contant-left {
   margin-right: 120px;
 }
+
 .footer-logo {
   display: inline-block;
   align-items: center;
@@ -1018,7 +1026,7 @@ ul {
 }
 
 .footer-pseudo-title {
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
 
   font-weight: 500;
   color: var(--clean-white);
@@ -1054,8 +1062,17 @@ ul {
   fill: var(--footer-text);
 }
 
+.footer-contant-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
 .footer-subscribe-form {
   display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .footer-subscribe-label {
   margin-right: 24px;
