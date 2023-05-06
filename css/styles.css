@@ -1002,6 +1002,8 @@ ul {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 24px;
+    align-items: flex-start;
+    width: 582px;
   }
 }
 
@@ -1015,6 +1017,11 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .footer-contant-left {
+    align-items: start;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -1052,6 +1059,12 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-contant-center {
+    align-items: start;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .footer-contant-center {
