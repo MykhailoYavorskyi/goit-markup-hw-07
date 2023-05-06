@@ -428,7 +428,6 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .main-title {
-    /* margin-bottom: 36px; */
     margin-bottom: 72px;
 
     font-size: 36px;
@@ -480,6 +479,14 @@ ul {
 
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 767px) {
+  .modal {
+    width: calc(100% - 30px);
+    max-width: 408px;
+    overflow-y: scroll;
+    max-height: 90vh;
+  }
+}
 .modal-close-button {
   position: absolute;
   right: 24px;
@@ -518,7 +525,7 @@ ul {
 .contact-form-title {
   display: block;
 
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -528,6 +535,12 @@ ul {
 .contact-form {
   text-align: left;
 }
+
+/* @media only screen and (max-width: 767px) {
+  .contact-form {
+    width: calc(100% - 48px);
+  }
+} */
 .contact-form-label {
   display: block;
 
