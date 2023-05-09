@@ -965,24 +965,75 @@ img {
   |============================
 */
 .section-portfolio {
-  padding-top: 96px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
+@media only screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .section-portfolio {
+    padding-top: 96px;
+  }
+}
+
 .button-list {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
 
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .button-list {
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .button-list {
+    margin-bottom: 72px;
+  }
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
+
+@media only screen and (min-width: 768px) {
+  .portfolio-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-list {
+    row-gap: 48px;
+  }
+}
+
 .portfolio-list-element {
-  width: 360px;
+  width: 396px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-list-element {
+    width: 356px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-list-element {
+    width: 360px;
+  }
 }
 .portfolio-link:hover .portfolio-overlay,
 .portfolio-link:focus .portfolio-overlay {
@@ -1036,6 +1087,12 @@ img {
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
+}
+.portfolio-list-content > .secondary-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
 }
 /**
   |============================
