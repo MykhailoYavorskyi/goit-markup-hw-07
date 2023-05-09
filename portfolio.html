@@ -77,13 +77,42 @@
             <li class="portfolio-list-element">
               <a href="" class="portfolio-link link">
                 <div class="portfolio-box">
-                  <img
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Banking app interface"
-                    width="360"
-                    height="300"
-                    class="portfolio-image img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-widht: 1158px)"
+                      srcset="
+                        ./images/portfolio/project-card-1desk.jpg    1x,
+                        ./images/portfolio/project-card-1desk@2x.jpg 2x,
+                        ./images/portfolio/project-card-1desk@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-widht: 768px)"
+                      srcset="
+                        ./images/portfolio/project-card-1tab.jpg    1x,
+                        ./images/portfolio/project-card-1tab@2x.jpg 2x,
+                        ./images/portfolio/project-card-1tab@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-widht: 767px)"
+                      srcset="
+                        ./images/portfolio/project-card-1mob.jpg    1x,
+                        ./images/portfolio/project-card-1mob@2x.jpg 2x,
+                        ./images/portfolio/project-card-1mob@3x.jpg 3x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-image img"
+                      src="./images/portfolio/project-card-1mob.jpg"
+                      alt="Banking app interface"
+                      width="360"
+                      height="300"
+                    />
+                  </picture>
                   <div class="portfolio-overlay"
                     ><p class="portfolio-overlay-text"
                       >14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
